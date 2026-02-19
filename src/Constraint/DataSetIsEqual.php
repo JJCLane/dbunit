@@ -37,7 +37,7 @@ class DataSetIsEqual extends Constraint
      */
     public function __construct(IDataSet $value)
     {
-        if (in_array('__construct', get_class_methods(get_parent_class(__CLASS__)), true)) {
+        if (in_array('__construct', get_class_methods(get_parent_class(self::class)), true)) {
             parent::__construct();
         }
         $this->value = $value;
